@@ -1,0 +1,20 @@
+﻿<Window x:Class="KeyDownMovement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyDownMovement"
+        mc:Ignorable="d"
+        Title="KeyDownMovement" Height="450" Width="800" FocusManager.FocusedElement="{Binding ElementName=MyCanvas}">
+    <Canvas Name="MyCanvas" KeyDown="Canvas_KeyDown" Focusable="True" >
+
+        <Rectangle x:Name="rec1" Width="50" Height="50" Margin="0" Canvas.Left="10" Canvas.Top="10">
+
+            <Rectangle.Fill>
+                <SolidColorBrush Color="BlueViolet" />
+            </Rectangle.Fill>
+            
+        </Rectangle>
+        
+    </Canvas>
+</Window>
